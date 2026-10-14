@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Correlación de Pearson</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+
+            <div>
+                <p class="career">
+                    Tecnicatura Superior en Desarrollo de Software
+                </p>
+
+                <h1>
+                    Relación entre Variables
+                </h1>
+
+                <p class="subtitle">
+                    Análisis del coeficiente de correlación de Pearson
+                    entre variables meteorológicas.
+                </p>
+            </div>
+
+        </header>
+
+
+        <!-- Información general -->
+
+        <section class="info-card">
+
+            <h2>Coeficiente de Pearson</h2>
+
+            <p>
+                El coeficiente de correlación de Pearson permite medir
+                la fuerza y la dirección de una relación lineal entre
+                dos variables.
+            </p>
+
+            <div class="pearson-scale">
+
+                <div>
+                    <strong>r cercano a 1</strong>
+                    <span>Correlación positiva</span>
+                </div>
+
+                <div>
+                    <strong>r cercano a 0</strong>
+                    <span>Correlación lineal débil o nula</span>
+                </div>
+
+                <div>
+                    <strong>r cercano a -1</strong>
+                    <span>Correlación negativa</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Resultado principal -->
+
+        <section id="mainResult" class="main-result hidden">
+
+            <h2>Mayor correlación encontrada</h2>
+
+            <p id="mainResultText"></p>
+
+        </section>
+
+
+        <!-- Error -->
+
+        <div id="errorContainer" class="error-message hidden"></div>
+
+
+        <!-- Contenedor de las 6 cards -->
+
+        <section id="cardsContainer" class="cards-container">
+
+            <!-- Las cards se crean desde JavaScript -->
+
+        </section>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

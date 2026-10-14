@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6f9;
+    color: #1f2937;
+    padding: 25px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.career {
+    color: #64748b;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.header h1 {
+    color: #2563eb;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+
+/* Información de Pearson */
+
+.info-card {
+    background-color: white;
+
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h2 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.info-card > p {
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.pearson-scale {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.pearson-scale div {
+    background-color: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pearson-scale strong {
+    color: #2563eb;
+}
+
+.pearson-scale span {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* Resultado principal */
+
+.main-result {
+    background-color: #eff6ff;
+
+    border: 1px solid #60a5fa;
+    border-radius: 10px;
+
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.main-result h2 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+.main-result p {
+    color: #1e3a8a;
+    line-height: 1.6;
+}
+
+
+/* Cards */
+
+.cards-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+.pearson-card {
+    background-color: white;
+
+    border-radius: 12px;
+    padding: 25px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.pearson-card h2 {
+    color: #2563eb;
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Valor de Pearson */
+
+.pearson-value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #f8fafc;
+
+    border-left: 5px solid #2563eb;
+    border-radius: 7px;
+
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.pearson-value span {
+    color: #475569;
+}
+
+.pearson-value strong {
+    font-size: 24px;
+    color: #2563eb;
+}
+
+
+/* Gráfico */
+
+.chart-container {
+    position: relative;
+    height: 320px;
+    margin-bottom: 20px;
+}
+
+
+/* Análisis */
+
+.analysis {
+    background-color: #f8fafc;
+
+    border-radius: 8px;
+    padding: 15px;
+
+    color: #475569;
+
+    line-height: 1.6;
+}
+
+.analysis strong {
+    color: #1e293b;
+}
+
+
+/* Mensajes */
+
+.error-message {
+    background-color: #fee2e2;
+    color: #b91c1c;
+
+    border: 1px solid #f87171;
+
+    border-radius: 8px;
+
+    padding: 15px;
+    margin-bottom: 20px;
+
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .pearson-scale {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .header,
+    .info-card,
+    .pearson-card {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+
+}
