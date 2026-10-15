@@ -16,8 +16,7 @@ const mainResultText =
 
 
 
-// Guardamos los gráficos para poder destruirlos
-// antes de volver a crearlos.
+// Guardo los gráficos para poder destruirlos antes de volver a crearlos.
 let charts = [];
 
 
@@ -89,9 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// ----------------------------------------------------
 // CONSULTAR API
-// ----------------------------------------------------
 
 async function cargarDatos() {
 
@@ -140,16 +137,14 @@ async function cargarDatos() {
 }
 
 
-// ----------------------------------------------------
 // ANALIZAR TODAS LAS COMBINACIONES
-// ----------------------------------------------------
 
 function analizarDatos(valores) {
 
-    // Eliminamos las cards anteriores
+    // Elimina las cards anteriores
     cardsContainer.innerHTML = '';
 
-    // Destruimos gráficos anteriores
+    // Destruye gráficos anteriores
     charts.forEach(chart => chart.destroy());
 
     charts = [];
@@ -202,10 +197,7 @@ function analizarDatos(valores) {
 
 }
 
-
-// ----------------------------------------------------
 // CÁLCULO DEL COEFICIENTE DE PEARSON
-// ----------------------------------------------------
 
 function calcularPearson(x, y) {
 
@@ -274,10 +266,7 @@ function calcularPearson(x, y) {
 
 }
 
-
-// ----------------------------------------------------
 // CREAR CARD
-// ----------------------------------------------------
 
 function crearCard(
     combinacion,
@@ -346,10 +335,7 @@ function crearCard(
 
 }
 
-
-// ----------------------------------------------------
-// INTERPRETAR PEARSON
-// ----------------------------------------------------
+// INTERPRETAR RANGOS DE COEFICIENTE DE PEARSON
 
 function interpretarPearson(r) {
 
@@ -429,10 +415,7 @@ function interpretarPearson(r) {
 
 }
 
-
-// ----------------------------------------------------
 // CREAR GRÁFICO DE DISPERSIÓN
-// ----------------------------------------------------
 
 function crearGrafico(
     combinacion,
@@ -547,10 +530,7 @@ function crearGrafico(
 
 }
 
-
-// ----------------------------------------------------
 // BUSCAR LA CORRELACIÓN MÁS FUERTE
-// ----------------------------------------------------
 
 function mostrarMayorCorrelacion(resultados) {
 
@@ -626,9 +606,7 @@ function mostrarMayorCorrelacion(resultados) {
 }
 
 
-// ----------------------------------------------------
 // CONCLUSIÓN DE LA MAYOR CORRELACIÓN
-// ----------------------------------------------------
 
 function obtenerConclusionMayorCorrelacion(r) {
 
@@ -683,9 +661,7 @@ function obtenerConclusionMayorCorrelacion(r) {
 }
 
 
-// ----------------------------------------------------
 // MOSTRAR ERROR
-// ----------------------------------------------------
 
 function mostrarError(mensaje) {
 
